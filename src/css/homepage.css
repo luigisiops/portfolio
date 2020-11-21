@@ -140,6 +140,7 @@ a, a:visited, a:active {
     display:block;
     height: 80%;
     width:auto;
+    border-radius: 10px;
     
 }
 
