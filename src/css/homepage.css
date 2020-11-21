@@ -93,7 +93,7 @@ a, a:visited, a:active {
 /*next page*/
 #about {
     display: flex;
-    height: 100%;
+    height: 100vh;
     background: rgb(236, 236, 236);
     color: black
 }
