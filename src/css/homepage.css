@@ -90,9 +90,10 @@ a, a:visited, a:active {
     border: white;
 }
 
-/*next page*/
+/*=============ABOUT PAGE ===============*/
 #about {
     display: flex;
+    justify-content: space-around;
     height: 100vh;
     background: rgb(236, 236, 236);
     color: black
@@ -131,6 +132,15 @@ a, a:visited, a:active {
     margin: 0px;
     font-size: 4rem;
 
+}
+
+#grad-picture{
+    margin-top: 76.8px;
+    margin-left: 2%;
+    display:block;
+    height: 80%;
+    width:auto;
+    
 }
 
 .language-container{
@@ -306,16 +316,20 @@ a, a:visited, a:active {
         height: 13.5rem;
         width: 13.5rem;
         margin-bottom: 0.5vh;
+        margin-top: 5%;
     }
     #title-socials-container{
         justify-content: center;
         margin:0vh;
         width:100vw;
-        height: 95vh;
+        height: 95%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     #title{
         font-size: 4.8rem;
         margin:10px;
+        margin-top: 15%;
         font-family: 'Bebas Neue';
         text-align:center;
     }
@@ -343,6 +357,8 @@ a, a:visited, a:active {
     #about {
         margin: 0px;
         height: 100%;
+        padding-top: 5%;
+        padding-bottom: 10%;
     }
     #about-title{
         margin-top: 0.3em;
@@ -361,6 +377,9 @@ a, a:visited, a:active {
         font-size: 1.5rem;
         margin: 5px;
         margin-bottom: 0.2em;
+    }
+    #grad-picture{
+        display:none;
     }
     .language-icons{
         font-size:1rem;

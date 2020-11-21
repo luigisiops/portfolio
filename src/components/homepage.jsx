@@ -14,7 +14,7 @@ import Python from '../css/images/languages/python.png'
 import Django from '../css/images/languages/django.png'
 import Psql from '../css/images/languages/psql.png'
 
-
+import Gradpic from '../css/images/gradpic.png'
 
 import Gohort from '../css/images/Gohort.png'
 import Chalkup from '../css/images/chalkup.png'
@@ -67,6 +67,7 @@ const About = () => {
         })
     return(
     <div id = "about">
+        <img src = {Gradpic} id = "grad-picture"/>
         <div id = "about-information">
             <h1 id = "about-title">Hi I'm Luigi. Nice to meet you!</h1>
             <p id = "about-statement">As an up-and-coming developer, I am on a continuous journey of self-improvement. 
@@ -76,6 +77,7 @@ const About = () => {
                 {icons}              
             </div>
         </div>   
+
     </div>
     )}
 
