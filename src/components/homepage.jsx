@@ -35,7 +35,7 @@ const Headers = () => {
     return(
     <div id = "title-socials-container">
         <img id = "profile-pic" src={profilepic}/>
-        <h1 id="title">Luigi Siopongco.</h1>
+        <h1 id="title">Luigi Siopongco</h1>
         <div id="descriptors">Fullstack Developer | Writer | Photographer </div>
         <div id="socials-container">
             <a href = "https://instagram.com/luigisiopongco/" className="socials"><FontAwesomeIcon icon ={faInstagram}/></a>
