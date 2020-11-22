@@ -44,7 +44,7 @@ const Headers = () => {
             <a href = "https://github.com/luigisiops" className="socials"><FontAwesomeIcon icon = {faGithub}/></a>
             <a href = "https://medium.com/@luigisiops"className="socials"><FontAwesomeIcon icon = {faMedium}/></a>
         </div>
-        <a href='./altresume.pdf' download> Download Resume</a>
+        <a href='./Siopongco_Resume.pdf' download> Download Resume</a>
     </div>
     
     )}
