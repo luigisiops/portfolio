@@ -22,18 +22,10 @@ import Flixlists from '../css/images/flixlists.png'
 import Gifter from '../css/images/Gifter.png'
 
 
-const Navbar = () => {
-    return(
-    <div id= "navbar">
-        <button id = "home" className="nav-element">Home</button>
-        <button className="nav-element">About</button>
-        <button className="nav-element">Projects</button>
-    </div>
-    )}
 
-const Headers = () => {
+const Headers = (three) => {
     return(
-    <div id = "title-socials-container">
+    <div ref = {three.three} id = "title-socials-container">
         <img id = "profile-pic" src={profilepic}/>
         <h1 id="title">Luigi Siopongco</h1>
         <div id="descriptors">Fullstack Developer | Writer | Photographer </div>
@@ -49,7 +41,7 @@ const Headers = () => {
     
     )}
 
-const About = () => {
+const About = (two) => {
         const [isCssandHtml, setCssandHtml] = useState(false)
         const [isJavascript, setJavascript] = useState(false)
         const [isNode, setNode] = useState(false)
@@ -66,12 +58,12 @@ const About = () => {
             )
         })
     return(
-    <div id = "about">
+    <div ref = {two.two} id = "about">
         <img src = {Gradpic} id = "grad-picture"/>
         <div id = "about-information">
             <h1 id = "about-title">Hi I'm Luigi. Nice to meet you!</h1>
             <p id = "about-statement">As an up-and-coming developer, I am on a continuous journey of self-improvement. 
-                I have worked in fast-paced tech environments, collaborated to develop applications, and led successful projects/events.</p>
+                I have worked in fast-paced environments, collaborated to develop applications, and led successful projects/events.</p>
             <h1 id = "about-language-title">Known Languages / Tools</h1>
             <div id = "about-language-icons">
                 {icons}              
@@ -81,15 +73,14 @@ const About = () => {
     </div>
     )}
 
-const Project = () => {
+const Project = (one) => {
     const [isProjectOne, setProjectOne] = useState(false)
     const [isProjectTwo, setProjectTwo] = useState(false)
     const [isProjectThree, setProjectThree] = useState(false)
     const [isProjectFour, setProjectFour] = useState(false)
 
-
     return(
-        <div id = "projects">
+        <div ref = {one.one}id = "projects">
             <div id = "project-header">Projects</div>
 
             <div id = "project-content">
@@ -99,8 +90,8 @@ const Project = () => {
                             {isProjectOne && (
                                 <div className = "top">
                                     <div className = "show">Gohort</div>
-                                    <div className = "project-body">A travel planning application</div>
-                                    <a href = "https://github.com/luigisiops" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
+                                    <div className = "project-body">A team built travel planning application with multiple features including, payments, locations, saving plans, etc. Built with React/Redux and Django </div>
+                                    <a href = "https://github.com/chan-labs/trippy-api" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
                             )}
                     </div>
@@ -114,7 +105,7 @@ const Project = () => {
                                         An application for rock climbing enthusiasts built with MustacheJs on the frontend
                                         and NodeJS and Postgres SQL on the backend
                                     </div>
-                                    <a href = "https://github.com/luigisiops" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
+                                    <a href = "https://github.com/luigisiops/CHALK-UP" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
                             )}
                     </div>
@@ -127,10 +118,10 @@ const Project = () => {
                                 <div className = "top">
                                     <div className = "show">Flixlists</div>
                                     <div className = "project-body">
-                                        A front end project made for learning frontend web development using a movie web api. Users are able to search and create
+                                        A full stack project made with Javascript and Firebase using a movies REST api. Users are able to search and create
                                         personal movie lists which was stored on firebase in the backend.
                                     </div>
-                                    <a href = "https://github.com/luigisiops" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
+                                    <a href = "https://github.com/luigisiops/FlixLists" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
                             )}
                     </div>
@@ -141,7 +132,7 @@ const Project = () => {
                                 <div className = "top">
                                     <div className = "show">GIFter</div>
                                     <div className = "project-body">
-                                        A fun small frontend react project that allows a user to search for gifs via the tenor api and save their favorite ones.
+                                        A fun small frontend react project that allows a user to search for gifs via the tenor api. Built with React.
                                     </div>
                                     <a href = "https://github.com/luigisiops" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
@@ -174,12 +165,20 @@ const Footer = () => {
 }
 
 const HomePageContainer = () => {
+const homeScroll = React.createRef()
+const aboutScroll = React.createRef()
+const projectScroll = React.createRef()
+const Scroll = (ref) => ref.current.scrollIntoView({behavior: "smooth"})
     return(
         <div id = 'webpage-container'>
-            <Navbar/>
-            <Headers/>
-            <About/>
-            <Project/>
+        <div id= "navbar">
+            <button onClick = {() => Scroll(homeScroll)} id = "home" className="nav-element">Home</button>
+            <button onClick = {() => Scroll(aboutScroll)} className="nav-element">About</button>
+            <button onClick = {() => Scroll(projectScroll)} className="nav-element">Projects</button>
+        </div>
+            <Headers three = {homeScroll}/>
+            <About two = {aboutScroll}/>
+            <Project one = {projectScroll}/>
             <ContactMe/>
             <Footer/>
         </div>
