@@ -20,7 +20,8 @@ import Gohort from '../css/images/Gohort.png'
 import Chalkup from '../css/images/chalkup.png'
 import Flixlists from '../css/images/flixlists.png'
 import Gifter from '../css/images/Gifter.png'
-
+import silverthread from '../css/images/silverthread.png'
+import socialbubble from '../css/images/social-bubbles.png'
 
 
 const Headers = (three) => {
@@ -78,6 +79,9 @@ const Project = (one) => {
     const [isProjectTwo, setProjectTwo] = useState(false)
     const [isProjectThree, setProjectThree] = useState(false)
     const [isProjectFour, setProjectFour] = useState(false)
+    const [isProjectFive, setProjectFive] = useState(false)
+    const [isProjectSix, setProjectSix] = useState(false)
+
 
     return(
         <div ref = {one.one}id = "projects">
@@ -85,6 +89,7 @@ const Project = (one) => {
 
             <div id = "project-content">
                 <div className = "project-upper">
+
                     <div onMouseEnter = {() => setProjectOne(true)} onMouseLeave = {() => setProjectOne(false)} className = "project-item">
                         <img className = "project-image" src = {Gohort}/>
                             {isProjectOne && (
@@ -109,9 +114,7 @@ const Project = (one) => {
                                 </div>
                             )}
                     </div>
-                </div>
 
-                <div className = "project-lower">
                     <div onMouseEnter = {() => setProjectThree(true)} onMouseLeave = {() => setProjectThree(false)} className = "project-item">
                         <img className = "project-image" src = {Flixlists}/>
                             {isProjectThree && (
@@ -124,7 +127,7 @@ const Project = (one) => {
                                     <a href = "https://github.com/luigisiops/FlixLists" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
                             )}
-                    </div>
+                    </div>                    
 
                     <div  onMouseEnter = {() => setProjectFour(true)} onMouseLeave = {() => setProjectFour(false)} className = "project-item">
                         <img className = "project-image" src = {Gifter}/>
@@ -135,6 +138,33 @@ const Project = (one) => {
                                         A fun small frontend react project that allows a user to search for gifs via the tenor api. Built with React.
                                     </div>
                                     <a href = "https://github.com/luigisiops" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
+                                </div>
+                            )}
+                    </div>
+
+                    <div  onMouseEnter = {() => setProjectFive(true)} onMouseLeave = {() => setProjectFive(false)} className = "project-item">
+                        <img className = "project-image" src = {socialbubble}/>
+                            {isProjectFive && (
+                                <div className = "top">
+                                    <div className = "show">Social Bubble</div>
+                                    <div className = "project-body">
+                                        A fullstack application built for the 2020 Developers Week Hack NYC Hackathon. This is an socialmedia app for keeping 
+                                        track of social groups throughout quarantine. Built with React/Redux on the frontend and Node on the backend.
+                                    </div>
+                                    <a href = "https://github.com/luigisiops/social-bubble-client" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
+                                </div>
+                            )}
+                    </div>
+
+                    <div  onMouseEnter = {() => setProjectSix(true)} onMouseLeave = {() => setProjectSix(false)} className = "project-item">
+                        <img className = "project-image" src = {silverthread}/>
+                            {isProjectSix && (
+                                <div className = "top">
+                                    <div className = "show">Silver Thread Designs Inventory Management</div>
+                                    <div className = "project-body">
+                                        A freelance project built for a client that needed an inventory management system for her jewelry business. Built with React/Redux on the frontend and Node on the backend.
+                                    </div>
+                                    <a href = "https://github.com/luigisiops/silver-thread-client" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
                                 </div>
                             )}
                     </div>
