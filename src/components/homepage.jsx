@@ -148,7 +148,7 @@ const Project = (one) => {
                                 <div className = "top">
                                     <div className = "show">Social Bubble</div>
                                     <div className = "project-body">
-                                        A fullstack application built for the 2020 Developer Week Hack NYC Hackathon. This is an socialmedia app for keeping 
+                                        A Full-Stack application built for the 2020 Developer Week Hack NYC Hackathon. This is an socialmedia app for keeping 
                                         track of social groups throughout quarantine. Built with React/Redux on the frontend and Node on the backend.
                                     </div>
                                     <a href = "https://github.com/luigisiops/social-bubble-client" className="project-github"><FontAwesomeIcon icon = {faGithub}/></a>
