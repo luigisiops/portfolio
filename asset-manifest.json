@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.55bcb282.chunk.css",
+    "main.js": "/portfolio/static/js/main.a8407175.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a8407175.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d8432009.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d8432009.js.map",
+    "static/js/2.508163ff.chunk.js": "/portfolio/static/js/2.508163ff.chunk.js",
+    "static/js/2.508163ff.chunk.js.map": "/portfolio/static/js/2.508163ff.chunk.js.map",
+    "static/js/3.9c6c367e.chunk.js": "/portfolio/static/js/3.9c6c367e.chunk.js",
+    "static/js/3.9c6c367e.chunk.js.map": "/portfolio/static/js/3.9c6c367e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.55bcb282.chunk.css.map": "/portfolio/static/css/main.55bcb282.chunk.css.map",
+    "static/js/2.508163ff.chunk.js.LICENSE.txt": "/portfolio/static/js/2.508163ff.chunk.js.LICENSE.txt",
+    "static/media/Gifter.c96ba008.png": "/portfolio/static/media/Gifter.c96ba008.png",
+    "static/media/Gohort.b15262e9.png": "/portfolio/static/media/Gohort.b15262e9.png",
+    "static/media/Redux.0003ae67.png": "/portfolio/static/media/Redux.0003ae67.png",
+    "static/media/chalkup.0ac52821.png": "/portfolio/static/media/chalkup.0ac52821.png",
+    "static/media/cssandhtml.13675869.png": "/portfolio/static/media/cssandhtml.13675869.png",
+    "static/media/flixlists.d685a5ca.png": "/portfolio/static/media/flixlists.d685a5ca.png",
+    "static/media/gradpic.aa3e509b.png": "/portfolio/static/media/gradpic.aa3e509b.png",
+    "static/media/nodejs.25b3b685.png": "/portfolio/static/media/nodejs.25b3b685.png",
+    "static/media/profile.91c12db8.png": "/portfolio/static/media/profile.91c12db8.png",
+    "static/media/psql.b0e8eea5.png": "/portfolio/static/media/psql.b0e8eea5.png",
+    "static/media/python.0e3d57bf.png": "/portfolio/static/media/python.0e3d57bf.png",
+    "static/media/react.60daf01b.png": "/portfolio/static/media/react.60daf01b.png",
+    "static/media/silverthread.b294a977.png": "/portfolio/static/media/silverthread.b294a977.png",
+    "static/media/social-bubbles.ed031c65.png": "/portfolio/static/media/social-bubbles.ed031c65.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8432009.js",
+    "static/js/2.508163ff.chunk.js",
+    "static/css/main.55bcb282.chunk.css",
+    "static/js/main.a8407175.chunk.js"
+  ]
+}
